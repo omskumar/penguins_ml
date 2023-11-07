@@ -6,6 +6,10 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+password_guess = st.text_input("What is the Password?")
+if password_guess != st.secrets["omapp"]:
+  st.stop()
+
 st.title('Penguin Classifier: A Machine Learning App') 
 
 # Display the image
