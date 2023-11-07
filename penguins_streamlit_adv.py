@@ -7,7 +7,7 @@ import pandas as pd
 import pickle
 
 password_guess = st.text_input("What is the Password?")
-if password_guess != st.secrets["omapp"]:
+if password_guess != st.secrets["password"]:
   st.stop()
 
 st.title('Penguin Classifier: A Machine Learning App') 
